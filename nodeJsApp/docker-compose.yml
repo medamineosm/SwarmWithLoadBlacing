@@ -2,11 +2,11 @@ version: '3'
 
 services:
   awesome:
-   image: awesome
+   image: searchengine:latest
    ports:
-     - 8080
+     - 9091
    environment:
-     - SERVICE_PORTS=8080
+     - SERVICE_PORTS=9091
    deploy:
      replicas: 20
      update_config:
